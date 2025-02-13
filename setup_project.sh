@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Project name
-PROJECT_NAME="MediaPlayer"
+PROJECT_NAME="ai_player"
 
 # Create directory structure
 mkdir -p $PROJECT_NAME/{docs,thirdparty/{FFmpeg,OpenCV,Whisper},src/{app,core,ai,ui,utils},plugins,tests,resources/{icons,themes,fonts},scripts,deployment/{windows,linux,macos,android,ios}}

@@ -1,5 +1,5 @@
 @echo off
-set PROJECT_NAME=MediaPlayer
+set PROJECT_NAME=ai_player
 
 :: Create directory structure
 mkdir %PROJECT_NAME%\docs
