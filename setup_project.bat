@@ -1,11 +1,18 @@
 @echo off
+
+mkdir docs
+mkdir thirdparty\FFmpeg
+mkdir thirdparty\OpenCV
+mkdir thirdparty\Whisper
+mkdir deployment\windows
+mkdir deployment\linux
+mkdir deployment\macos
+mkdir deployment\android
+mkdir deployment\ios
+
 set PROJECT_NAME=ai_player
 
 :: Create directory structure
-mkdir %PROJECT_NAME%\docs
-mkdir %PROJECT_NAME%\thirdparty\FFmpeg
-mkdir %PROJECT_NAME%\thirdparty\OpenCV
-mkdir %PROJECT_NAME%\thirdparty\Whisper
 mkdir %PROJECT_NAME%\src\app
 mkdir %PROJECT_NAME%\src\core
 mkdir %PROJECT_NAME%\src\ai
@@ -17,11 +24,6 @@ mkdir %PROJECT_NAME%\resources\icons
 mkdir %PROJECT_NAME%\resources\themes
 mkdir %PROJECT_NAME%\resources\fonts
 mkdir %PROJECT_NAME%\scripts
-mkdir %PROJECT_NAME%\deployment\windows
-mkdir %PROJECT_NAME%\deployment\linux
-mkdir %PROJECT_NAME%\deployment\macos
-mkdir %PROJECT_NAME%\deployment\android
-mkdir %PROJECT_NAME%\deployment\ios
 
 :: Create main project files
 echo. > %PROJECT_NAME%\CMakeLists.txt

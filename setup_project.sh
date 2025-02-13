@@ -1,10 +1,12 @@
 #!/bin/bash
 
+mkdir -p ./{docs,thirdparty/{FFmpeg,OpenCV,Whisper},deployment/{windows,linux,macos,android,ios}}
+
 # Project name
 PROJECT_NAME="ai_player"
 
 # Create directory structure
-mkdir -p $PROJECT_NAME/{docs,thirdparty/{FFmpeg,OpenCV,Whisper},src/{app,core,ai,ui,utils},plugins,tests,resources/{icons,themes,fonts},scripts,deployment/{windows,linux,macos,android,ios}}
+mkdir -p $PROJECT_NAME/{src/{app,core,ai,ui,utils},plugins,tests,resources/{icons,themes,fonts},scripts}
 
 # Create main project files
 touch $PROJECT_NAME/CMakeLists.txt
